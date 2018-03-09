@@ -186,11 +186,6 @@ public class RangeSeekBar extends View {
         }
 
         // if you don't set the mHintBGWith or the mHintBGWith < default value, if will use default value
-        if (mHintBGWith == 0) {
-            DEFAULT_PADDING_LEFT_AND_RIGHT = dp2px(context, 25);
-        }else {
-            DEFAULT_PADDING_LEFT_AND_RIGHT = Math.max((int)(mHintBGWith / 2+ dp2px(context, 5)),dp2px(context, 25));
-        }
 
         setRules(mMin, mMax, reserveValue, cellsCount);
         initPaint();
