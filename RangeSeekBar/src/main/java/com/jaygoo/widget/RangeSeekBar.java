@@ -662,9 +662,9 @@ public class RangeSeekBar extends View {
         }
         if (callback != null) {
             if (mSeekBarMode == 2) {
-                callback.onRangeChanged(this, leftSB.currPercent, rightSB.currPercent, false);
+                callback.onRangeChanged(this, min, max, false);
             } else {
-                callback.onRangeChanged(this, leftSB.currPercent, leftSB.currPercent, false);
+                callback.onRangeChanged(this, min, min, false);
             }
         }
         invalidate();
